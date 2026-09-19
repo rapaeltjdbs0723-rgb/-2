@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동·서양사 균형 핵심 지식 평가</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #f0f4f8; margin: 0; padding: 20px; color: #2d3748; line-height: 1.6; }
+        .container { max-width: 850px; margin: 0 auto; background: #ffffff; padding: 35px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+        h1 { text-align: center; color: #1a365d; border-bottom: 3px solid #3182ce; padding-bottom: 15px; margin-bottom: 30px; font-size: 1.8em; }
+        .part-header { padding: 12px 18px; font-weight: bold; font-size: 1.15em; color: white; margin: 35px 0 20px 0; border-radius: 8px; }
+        .part-east { background: linear-gradient(135deg, #2b6cb0, #3182ce); }
+        .part-west { background: linear-gradient(135deg, #c53030, #e53e3e); }
+        .question-card { background: #f7fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 22px; margin-bottom: 25px; }
+        .question-title { font-weight: bold; font-size: 1.05em; color: #1a202c; margin-bottom: 12px; }
+        .box { background: #ffffff; border-left: 4px solid #3182ce; padding: 14px; margin: 12px 0; font-size: 0.95em; border-radius: 0 6px 6px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .box-red { border-left-color: #e53e3e; }
+        .options { list-style: none; padding: 0; margin: 15px 0 0 0; }
+        .options li { margin-bottom: 10px; }
+        .options label { display: block; padding: 12px 16px; background: #ffffff; border: 1px solid #cbd5e0; border-radius: 8px; cursor: pointer; transition: all 0.2s ease; }
+        .options label:hover { background: #edf2f7; border-color: #a0aec0; }
+        .options input[type="radio"] { margin-right: 10px; }
+        textarea { width: 100%; height: 85px; padding: 12px; border: 1px solid #cbd5e0; border-radius: 8px; font-size: 0.95em; resize: vertical; margin-top: 8px; font-family: inherit; }
+        textarea:focus { outline: none; border-color: #3182ce; box-shadow: 0 0 0 3px rgba(49,130,206,0.15); }
+        .btn-submit { display: block; width: 100%; padding: 16px; background: #2b6cb0; color: white; border: none; border-radius: 10px; font-size: 1.15em; font-weight: bold; cursor: pointer; transition: background 0.2s ease; margin-top: 30px; }
+        .btn-submit:hover { background: #1a365d; }
+        .result-box { display: none; margin-top: 35px; padding: 25px; background: #f0fff4; border: 2px solid #38a169; border-radius: 12px; }
+        .score-text { text-align: center; font-size: 1.5em; font-weight: bold; color: #276749; }
+        .answer-explain { display: none; margin-top: 15px; padding: 15px; background: #fffaf0; border-left: 4px solid #dd6b20; font-size: 0.95em; border-radius: 0 6px 6px 0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🏛️ 동·서양사 5:5 골고루 심화 평가</h1>
+    <form id="quizForm">
+        
+        <!-- ==================== 동양사 영역 ==================== -->
+        <div class="part-header part-east">PART 1. 동아시아사 (송 · 북방 민족 · 몽골 및 원 · 동서 교류)</div>
+
+        <!-- Q1: 송나라 -->
+        <div class="question-card">
+            <div class="question-title">1. [송] 다음 자료의 (가), (나) 정책 및 인물에 대한 설명으로 옳은 것은?</div>
+            <div class="box">
+                • 당 멸망 후 혼란을 수습하고 송을 세운 <b>(가)</b>은/는 절도사의 권한을 약화시키고 전시 제도를 도입하여 황제권을 강화하였다.<br>
+                • 송대의 재정 악화와 군사력 약화를 극복하기 위해 <b>(나)</b>은/는 부국강병을 목표로 신법 개혁을 시도하였다.
+            </div>
+            <ul class="options">
+                <li><label><input type="radio" name="q1" value="1"> ① (가)의 문치주의 정책으로 송의 대외 군사력이 비약적으로 강화되었다.</label></li>
+                <li><label><input type="radio" name="q1" value="2"> ② (가)를 계기로 유교적 소양을 갖춘 사대부 계층이 새로운 사회 지배층으로 성장하였다.</label></li>
+                <li><label><input type="radio" name="q1" value="3"> ③ (나)의 개혁은 보수파 관료들의 열렬한 지지를 받아 장기간 성공을 거두었다.</label></li>
+                <li><label><input type="radio" name="q1" value="4"> ④ (나)의 성공으로 송은 금나라를 멸망시키고 북방 영토를 회복하였다.</label></li>
+            </ul>
+            <div id="exp1" class="answer-explain">
+                <b>💡 정답: ②</b><br>
+                해설: 송 태조의 문치주의와 과거제(전시) 강화는 유교적 사대부 계층을 지배층으로 성장시키는 계기가 되었습니다. 왕안석의 개혁(나)은 보수파의 반대로 실패했습니다.
+            </div>
+        </div>
+
+        <!-- Q2: 북방 민족 -->
+        <div class="question-card">
+            <div class="question-title">2. [북방 민족] 거란(요)과 여진(금) 등 정복 왕조의 특징으로 옳지 않은 것은?</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q2" value="1"> ① 지배층 부족은 부족제로, 피지배 한족은 주현제로 다스리는 이원적 통치 방식을 사용하였다.</label></li>
+                <li><label><input type="radio" name="q2" value="2"> ② 고유의 문화와 정체성을 지키기 위해 거란 문자, 여진 문자 등 독자적 문자를 제정하였다.</label></li>
+                <li><label><input type="radio" name="q2" value="3"> ③ 여진족의 야율아보기가 부족을 통합하여 요를 세우고 발해를 멸망시켰다.</label></li>
+                <li><label><input type="radio" name="q2" value="4"> ④ 정복 왕조들은 한족 문화에 완전히 흡수되는 것을 경계하였다.</label></li>
+            </ul>
+            <div id="exp2" class="answer-explain">
+                <b>💡 정답: ③</b><br>
+                해설: 야율아보기는 여진족이 아니라 '거란족'을 통합하여 요나라를 세운 인물입니다. (여진족이 세운 나라는 '금'나라, 아골타입니다.)
+            </div>
+        </div>
+
+        <!-- Q3: 몽골 및 원 -->
+        <div class="question-card">
+            <div class="question-title">3. [원] 원나라의 통치 및 사회·문화적 특징에 대한 설명으로 옳은 것만을 &lt;보기&gt;에서 고른 것은?</div>
+            <div class="box">
+                <b>&lt; 보 기 &gt;</b><br>
+                ㄱ. 몽골 제일주의를 실시하여 몽골인과 색목인을 우대하고 한인과 남인을 차별하였다.<br>
+                ㄴ. 지폐인 '교초'가 전국적으로 통용되어 상업과 교역 발달에 기여하였다.<br>
+                ㄷ. 성리학을 배척하고 이슬람교, 크리스트교 등 서양 종교만을 통치 이념으로 삼았다.<br>
+                ㄹ. 서민 문화가 발달하여 구어체 소설과 종합 예술인 '잡극'이 유행하였다.
+            </div>
+            <ul class="options">
+                <li><label><input type="radio" name="q3" value="1"> ① ㄱ, ㄴ, ㄷ</label></li>
+                <li><label><input type="radio" name="q3" value="2"> ② ㄱ, ㄴ, ㄹ</label></li>
+                <li><label><input type="radio" name="q3" value="3"> ③ ㄴ, ㄷ, ㄹ</label></li>
+                <li><label><input type="radio" name="q3" value="4"> ④ ㄱ, ㄹ</label></li>
+            </ul>
+            <div id="exp3" class="answer-explain">
+                <b>💡 정답: ② ㄱ, ㄴ, ㄹ</b><br>
+                해설: ㄷ은 오답입니다. 원나라는 성리학을 배척하지 않았으며, 과거제 과목으로 채택하기도 하였고 다양한 종교를 관용적으로 수용했습니다.
+            </div>
+        </div>
+
+        <!-- Q4: 동서 교류 (서술형) -->
+        <div class="question-card">
+            <div class="question-title">4. [동서 교류 - 서술형 1] 원나라 시기 발달한 교통망과 송·원대 중국의 3대 과학 기술이 동서 교류에 미친 영향을 서술하시오.</div>
+            <textarea id="q4" placeholder="역참제, 마르코 폴로(또는 이븐 바투타), 과학 기술(나침반, 화약, 인쇄술) 전파 등의 내용을 포함하여 작성하세요."></textarea>
+            <div id="exp4" class="answer-explain">
+                <b>💡 [동서 교류 모범 답안]</b><br>
+                원나라는 육로에 <b>역참제</b>를 정비하고 해로를 활성화하여 마르코 폴로 등 동서 여행가들이 왕래하였다. 이 과정에서 중국의 <b>나침반, 화약, 활판 인쇄술</b>이 이슬람을 거쳐 서양에 전파되어 대항해 시대, 기사 계층 몰락, 학문/종교 개혁 등 유럽 사회 변혁에 큰 영향을 주었다.
+            </div>
+        </div>
+
+        <!-- ==================== 서양사 영역 ==================== -->
+        <div class="part-header part-west">PART 2. 서양 근대사 (영국 · 미국 · 프랑스 혁명 및 나폴레옹)</div>
+
+        <!-- Q5: 영국 혁명 -->
+        <div class="question-card">
+            <div class="question-title">5. [영국 혁명] 영국 의회 정치 발전 과정에 대한 설명으로 옳은 것은?</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q5" value="1"> ① 청교도 혁명 결과 찰스 1세가 복위되고 절대 왕정이 강화되었다.</label></li>
+                <li><label><input type="radio" name="q5" value="2"> ② 크롬웰은 독재 정치를 실시하고 '항해 조례'를 제정하여 대외 무역을 확장하였다.</label></li>
+                <li><label><input type="radio" name="q5" value="3"> ③ 명예혁명 시기 의회는 윌리엄과 메리에게 '권리청원'을 승인받아 공화정을 수립하였다.</label></li>
+                <li><label><input type="radio" name="q5" value="4"> ④ 권리장전 승인으로 영국은 세계 최초의 무제한 절대 군주정을 완성하였다.</label></li>
+            </ul>
+            <div id="exp5" class="answer-explain">
+                <b>💡 정답: ②</b><br>
+                해설: 크롬웰은 청교도 혁명 후 공화정을 세우고 항해 조례를 제정했습니다. ① 찰스 1세는 처형됨, ③ 명예혁명 시기 문서는 '권리장전'이며 결과는 입헌 군주제 수립임.
+            </div>
+        </div>
+
+        <!-- Q6: 미국 혁명 -->
+        <div class="question-card">
+            <div class="question-title">6. [미국 혁명] 미국 독립 전쟁에 대한 설명으로 옳지 않은 것은?</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q6" value="1"> ① 영국의 인지세 부과와 차 세 부과에 반발하여 보스턴 차 사건이 발생하였다.</label></li>
+                <li><label><input type="radio" name="q6" value="2"> ② 식민지 대표들은 대륙 회의를 열고 워싱턴을 총사령관으로 선출하였다.</label></li>
+                <li><label><input type="radio" name="q6" value="3"> ③ 1776년 토머스 제퍼슨 등이 작성한 '독립 선언서'를 발표하였다.</label></li>
+                <li><label><input type="radio" name="q6" value="4"> ④ 독립 달성 후 연방주의와 삼권분립에 기초한 세계 최초의 세습 군주국을 수립하였다.</label></li>
+            </ul>
+            <div id="exp6" class="answer-explain">
+                <b>💡 정답: ④</b><br>
+                해설: 미국은 세습 군주국이 아니라 세계 최초의 '민주 공화국'을 수립하였습니다.
+            </div>
+        </div>
+
+        <!-- Q7: 프랑스 혁명 -->
+        <div class="question-card">
+            <div class="question-title">7. [프랑스 혁명] 프랑스 혁명의 전개 과정이 순서대로 바르게 연결된 것은?</div>
+            <div class="box box-red">
+                (가) 바스티유 감옥 습격 및 인권 선언 발표<br>
+                (나) 루이 16세의 삼부회 소집과 제3신분의 테니스 코트 서약<br>
+                (다) 로베스피에르의 공포 정치 실시 및 루이 16세 처형<br>
+                (라) 총재 정부의 혼란을 수습한 나폴레옹의 쿠데타(통령 정부)
+            </div>
+            <ul class="options">
+                <li><label><input type="radio" name="q7" value="1"> ① (나) → (가) → (다) → (라)</label></li>
+                <li><label><input type="radio" name="q7" value="2"> ② (가) → (나) → (다) → (라)</label></li>
+                <li><label><input type="radio" name="q7" value="3"> ③ (나) → (다) → (가) → (라)</label></li>
+                <li><label><input type="radio" name="q7" value="4"> ④ (가) → (다) → (나) → (라)</label></li>
+            </ul>
+            <div id="exp7" class="answer-explain">
+                <b>💡 정답: ① (나) → (가) → (다) → (라)</b><br>
+                해설: 삼부회 소집(나) ➔ 바스티유 감옥 습격/인권 선언(가) ➔ 국공연합/로베스피에르 공포정치 및 왕 처형(다) ➔ 나폴레옹 쿠데타(라) 순서로 진행되었습니다.
+            </div>
+        </div>
+
+        <!-- Q8: 나폴레옹 (서술형) -->
+        <div class="question-card">
+            <div class="question-title">8. [나폴레옹 - 서술형 2] 나폴레옹의 대외 정벌 및 대륙 봉쇄령이 유럽 각국에 미친 영향 2가지를 서술하시오.</div>
+            <textarea id="q8" placeholder="자유주의 확산, 민족주의 의식 고취 등의 키워드를 사용하여 작성하세요."></textarea>
+            <div id="exp8" class="answer-explain">
+                <b>💡 [나폴레옹 모범 답안]</b><br>
+                1. 나폴레옹의 정벌을 통해 프랑스 혁명의 이념인 <b>자유주의</b>가 유럽 전역으로 확산되었다.<br>
+                2. 나폴레옹의 지배와 대륙 봉쇄령에 대한 각국의 반발 과정에서 각 나라의 <b>민족주의</b> 의식이 크게 고취되었다.
+            </div>
+        </div>
+
+        <button type="button" class="btn-submit" onclick="checkAnswers()">제출 및 자동 채점하기</button>
+    </form>
+
+    <div id="resultBox" class="result-box">
+        <div class="score-text" id="scoreText"></div>
+        <p style="text-align:center; color: #4a5568; margin-top: 8px;">* 채점이 완료되었습니다. 각 문제 아래에서 정답과 상세 해설을 확인하세요!</p>
+    </div>
+</div>
+
+<script>
+    function checkAnswers() {
+        let score = 0;
+
+        // 동양사 객관식 (3문항 x 15점 = 45점)
+        if (document.querySelector('input[name="q1"]:checked')?.value === "2") score += 15;
+        if (document.querySelector('input[name="q2"]:checked')?.value === "3") score += 15;
+        if (document.querySelector('input[name="q3"]:checked')?.value === "2") score += 15;
+
+        // 서양사 객관식 (3문항 x 15점 = 45점)
+        if (document.querySelector('input[name="q5"]:checked')?.value === "2") score += 15;
+        if (document.querySelector('input[name="q6"]:checked')?.value === "4") score += 15;
+        if (document.querySelector('input[name="q7"]:checked')?.value === "1") score += 15;
+
+        // 결과 점수 출력
+        document.getElementById('scoreText').innerText = `객관식 점수: ${score} / 90 점 (서술형 2문항 별도 채점)`;
+        document.getElementById('resultBox').style.display = 'block';
+
+        // 해설 상자 전체 공개
+        for (let i = 1; i <= 8; i++) {
+            const exp = document.getElementById(`exp${i}`);
+            if (exp) exp.style.display = 'block';
+        }
+
+        // 결과 상자로 스크롤 이동
+        document.getElementById('resultBox').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
